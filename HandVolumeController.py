@@ -12,11 +12,14 @@ cap.set(3, wCam)
 cap.set(4, hCam)
 pTime = 0
 
-detector = htm.handDetector()
+detector = htm.handDetector(detectionCon=0.7)
 
 while True:
     success, img = cap.read()
     img = detector.findHands(img)
+    lmList=detector.findPosition(img,draw=False)
+    if len(lmList)!=0:
+    print(lmList[2])
 
     cTime = time.time()
     fps = 1 / (cTime - pTime)
