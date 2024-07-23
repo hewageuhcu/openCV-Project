@@ -1,6 +1,7 @@
 import cv2
 import time
 import numpy as np
+import HandTrackingModule as htm
 
 #########################################
 wCam,hCam=640,480
@@ -11,8 +12,13 @@ cap.set(3,wCam)
 cap.set(4,hCam)
 pTime=0
 
+detector=htm.handDetector()
+
+
 while True:
     success,img=cap.read()
+    img=detector.findHands(img)
+    
     
     cTime=time.time()
     fps=1/(cTime-pTime)
