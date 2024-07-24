@@ -36,9 +36,9 @@ while True:
         print(length)
         
         if length<50:
-            {
+            
               cv2.circle(img,(cx,cy),15,(0,255,0),cv2.FILLED)  
-            }
+            
     
     cTime = time.time()
     fps = 1 / (cTime - pTime)
