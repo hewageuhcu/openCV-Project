@@ -26,6 +26,7 @@ while True:
         x2,y2=lmList[8][1],lmList[8][2]
         
         cv2.circle(img,(x1,y1),15,(255,0,255),cv2.FILLED)
+        cv2.circle(img,(x2,y2),15,(255,0,255),cv2.FILLED)
    
    
     cTime = time.time()
