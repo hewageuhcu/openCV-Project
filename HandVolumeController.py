@@ -19,8 +19,9 @@ while True:
     img = detector.findHands(img)
     lmList=detector.findPosition(img,draw=False)
     if len(lmList)!=0:
+        {
     print(lmList[2])
-
+}
     cTime = time.time()
     fps = 1 / (cTime - pTime)
     pTime = cTime
