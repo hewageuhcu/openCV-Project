@@ -29,7 +29,7 @@ while True:
         cv2.circle(img,(x1,y1),15,(255,0,255),cv2.FILLED)
         cv2.circle(img,(x2,y2),15,(255,0,255),cv2.FILLED)
         cv2.line(img,(x1,y1),(x2,y2),(255,0,255),3)
-        cv2.circle(img,(cx,cy),15,(255,0,255),cv2.FILLED
+        cv2.circle(img,(cx,cy),15,(255,0,255),cv2.FILLED)
    
     cTime = time.time()
     fps = 1 / (cTime - pTime)
