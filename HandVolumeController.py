@@ -15,6 +15,11 @@ pTime = 0
 
 detector = htm.handDetector(detectionCon=0.7)
 
+from ctypes import cast,POINTER
+from comtypes import CLSCTX_ALL
+from pycaw.pycaw import AudioUtilities,IAudioEndpointVolume
+devices=AudioUtilities.GetSpeakers()
+
 while True:
     success, img = cap.read()
     img = detector.findHands(img)
