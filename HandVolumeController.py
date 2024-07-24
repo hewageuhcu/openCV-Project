@@ -2,6 +2,7 @@ import cv2
 import time
 import numpy as np
 import HandTrackingModule as htm
+import math
 
 #########################################
 wCam, hCam = 640, 480
@@ -31,6 +32,9 @@ while True:
         cv2.line(img,(x1,y1),(x2,y2),(255,0,255),3)
         cv2.circle(img,(cx,cy),15,(255,0,255),cv2.FILLED)
    
+        length=math.hypot(x2-x1,y2-y1)
+        print(length)
+    
     cTime = time.time()
     fps = 1 / (cTime - pTime)
     pTime = cTime
