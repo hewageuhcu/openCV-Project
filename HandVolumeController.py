@@ -50,6 +50,12 @@ while True:
    
         length=math.hypot(x2-x1,y2-y1)
         print(length)
+      
+        #hand range 50-300
+        #volume range -65-0
+        
+        vol=np.interp(length,[50,300],[minVol,maxVol])
+        
         
         if length<50:
             
