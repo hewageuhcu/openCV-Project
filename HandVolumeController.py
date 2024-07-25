@@ -26,7 +26,7 @@ volume=cast(interface,POINTER(IAudioEndpointVolume))
 #volume.GetMute()
 #volume.GetMasterVolumeLevel()
 print(volume.GetVolumeRange())
-volume.SetMasterVolumeLevel(-20.0,None)
+volume.SetMasterVolumeLevel(0.0,None)
 
 
 while True:
