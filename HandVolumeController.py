@@ -49,12 +49,13 @@ while True:
         cv2.circle(img,(cx,cy),15,(255,0,255),cv2.FILLED)
    
         length=math.hypot(x2-x1,y2-y1)
-        print(length)
+        #print(length)
       
         #hand range 50-300
         #volume range -65-0
         
         vol=np.interp(length,[50,300],[minVol,maxVol])
+        print(vol)
         
         
         if length<50:
