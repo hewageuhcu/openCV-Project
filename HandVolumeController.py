@@ -23,9 +23,9 @@ devices=AudioUtilities.GetSpeakers()
 interface=devices.Activate(
     IAudioEndpointVolume._iid_,CLSCTX_ALL,None)
 volume=cast(interface,POINTER(IAudioEndpointVolume))
-volume.GetMute()
-volume.GetMasterVolumeLevel()
-volume.GetVolumeRange()
+#volume.GetMute()
+#volume.GetMasterVolumeLevel()
+print(volume.GetVolumeRange())
 volume.SetMasterVolumeLevel(-20.0,None)
 
 
