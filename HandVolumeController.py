@@ -56,7 +56,7 @@ while True:
         
         vol=np.interp(length,[50,300],[minVol,maxVol])
         print(int(length),vol)
-        volume.setMasterVolumeLevel(vol,None)
+        volume.SetMasterVolumeLevel(vol,None)
         
         
         if length<50:
