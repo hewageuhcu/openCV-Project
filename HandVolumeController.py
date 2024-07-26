@@ -64,6 +64,7 @@ while True:
               cv2.circle(img,(cx,cy),15,(0,255,0),cv2.FILLED)  
             
     cv2.rectangle(img,(50,150),(85,400),(0,255,0),3)
+    cv2.rectangle(img,(50,150),(85,400),(0,255,0),3)
     
     cTime = time.time()
     fps = 1 / (cTime - pTime)
