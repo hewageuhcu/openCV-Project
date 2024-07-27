@@ -29,7 +29,7 @@ volRange=volume.GetVolumeRange()
 volume.SetMasterVolumeLevel(0.0,None)
 minVol=volRange[0]
 maxVol=volRange[1]
-vol=0
+vol=0 
 
 
 while True:
