@@ -60,7 +60,7 @@ while True:
         volume.SetMasterVolumeLevel(vol,None)
                       
             
-        if length<50:
+        if length<50: 
              
               cv2.circle(img,(cx,cy),15,(0,255,0),cv2.FILLED)  
             
