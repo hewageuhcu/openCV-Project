@@ -30,6 +30,7 @@ volume.SetMasterVolumeLevel(0.0,None)
 minVol=volRange[0]
 maxVol=volRange[1]
 vol=0 
+volBar=0
    
 
 while True:
@@ -56,7 +57,7 @@ while True:
         #volume range -65-0
         
         vol=np.interp(length,[50,300],[minVol,maxVol])
-        volBar=np.interp(length,[50,300],[400,150l])
+        volBar=np.interp(length,[50,300],[400,150])
         print(int(length),vol)
         volume.SetMasterVolumeLevel(vol,None)
                                 
