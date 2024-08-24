@@ -56,12 +56,13 @@ while True:
         #volume range -65-0
         
         vol=np.interp(length,[50,300],[minVol,maxVol])
+        volBar=np.interp(length,[50,300],[minVol,maxVol])
         print(int(length),vol)
         volume.SetMasterVolumeLevel(vol,None)
                                 
                       
         if length<50:  
-             
+              7
               cv2.circle(img,(cx,cy),15,(0,255,0),cv2.FILLED)  
             
     cv2.rectangle(img,(50,150),(85,400),(0,255,0),3)
