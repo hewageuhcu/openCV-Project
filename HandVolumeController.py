@@ -67,6 +67,7 @@ while True:
             
     cv2.rectangle(img,(50,150),(85,400),(0,255,0),3)
     cv2.rectangle(img,(50,int(volBar)),(85,400),(0,255,0),cv2.FILLED)
+    cv2.putText(img,f'FPS:')
     
     cTime = time.time()
     fps = 1 / (cTime - pTime)
