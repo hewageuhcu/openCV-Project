@@ -58,7 +58,7 @@ while True:
         
         vol=np.interp(length,[50,300],[minVol,maxVol])
         volBar=np.interp(length,[50,300],[400,150])
-        volBar=np.interp(length,[50,300],[400,150])
+        volPer=np.interp(length,[50,300],[0,100])
         print(int(length),vol)
         volume.SetMasterVolumeLevel(vol,None)
                                 
